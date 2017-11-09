@@ -50,9 +50,9 @@ Thumbs.db
 
 # Other #
 #########
-#*.psd
+*.psd
 *.ai
-#*.pdf
+*.pdf
 *.docx
 *.xlsx
 *.xls

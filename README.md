@@ -13,16 +13,15 @@
 
 ## I°) Création d'une micro API HTTP.
 
-* Utiliser le `dump.sql` fourni afin d'initialiser la base de données.
+* Utiliser `test_bko.sql` fourni afin d'initialiser la base de données.
 * Créer les methodes http suivantes:
 	- GET: `{votre_URL}/message/` -> Affiche les données de la table `message`.
 	- GET: `{votre_URL}/message/{id}`  -> Affiche les données de la table `message` pour l'{id}.
 	- POST: `{votre_URL}/message/` -> Ajoute une nouvelle ligne dans la table `message`.
 * Les methodes suivantes doivent renvoyer les données formatées en `Json` ou un message d'erreur lui aussi formaté en `Json`.
 
-## II°) Sécurisation de la micro API.
+## II°) Vérifications de l'intégrité des données.
 
-**Vérifications de l'intégrité des données:**
 * Adresse e-mail correcte *(obligatoire)*.
 * Téléphone à 10 chiffres commençant par «0» *(obligatoire)*.
 * Les champs `nom` et `message` sont facultatifs.
