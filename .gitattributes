@@ -1,17 +1,17 @@
 # INFO Source code #
 ####################
-*.htm text filter=tabspace
-*.HTM text filter=tabspace
-*.html text filter=tabspace
-*.HTML text filter=tabspace
-*.php text filter=tabspace
-*.PHP text filter=tabspace
-*.css text filter=tabspace
-*.CSS text filter=tabspace
-*.js text filter=tabspace
-*.JS text filter=tabspace
-*.json text filter=tabspace
-*.JSON text filter=tabspace
+*.htm text filter=tabspace eol=lf
+*.HTM text filter=tabspace eol=lf
+*.html text filter=tabspace eol=lf
+*.HTML text filter=tabspace eol=lf
+*.php text filter=tabspace eol=lf
+*.PHP text filter=tabspace eol=lf
+*.css text filter=tabspace eol=lf
+*.CSS text filter=tabspace eol=lf
+*.js text filter=tabspace eol=lf
+*.JS text filter=tabspace eol=lf
+*.json text filter=tabspace eol=lf
+*.JSON text filter=tabspace eol=lf
 # NOTE Shell scripts always need Unix style line feeds
 *.sh text filter=tabspace eol=lf
 *.SH text filter=tabspace eol=lf
@@ -47,8 +47,8 @@
 *.GIF binary
 *.ico binary
 *.ICO binary
-*.svg text
-*.SVG text
+*.svg text filter=tabspace eol=lf
+*.SVG text filter=tabspace eol=lf
 *.svgz binary
 *.SVGZ binary
 
@@ -67,7 +67,10 @@
 #################
 .gitattributes export-ignore
 .gitignore export-ignore
+.editorconfig export-ignore
 patches.md export-ignore
 changelog.md export-ignore
 package.json export-ignore
+package-lock.json export-ignore
 gulpfile.js export-ignore
+*.scss export-ignore

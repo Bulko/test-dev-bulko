@@ -5,8 +5,8 @@
 ## 0°) Consigne globale.
 
 >	La "propreté" du code est un critère prioritaire.   
->	L'utilisation de jQuery ou un autre Framework JS front est **autorisé**.   
->	L'utilisation de framework PHP  n'est **pas autorisé**.   
+>	L'utilisation de jQuery ou un autre Framework JS front est **autorisée**.   
+>	L'utilisation de framework PHP  n'est **pas autorisée**.   
 >	Votre code doit être compatible PHP 5.6 ou 7.   
 >	Votre code doit être testable sous Apache server ou Nginx.   
 >	Vos json doivent être [valides](https://jsonlint.com/).   
@@ -30,10 +30,10 @@
 ## III°) Création d'un formulaire d'envoi de message.
 
 * En utilisant la structure html fournie voir `index.php`.
-* La soumission du form déclanche : 
-	- L'enregistrement en base via votre micro API (Requette POST).
-	- Un email envoyé en text brut à `info@bulko.net` contenant un récaptulatif des donées posté.
-	- La soumission du formulaire et ses retour d'erreurs doivent se faire en `Ajax`.
+* La soumission du form déclenche : 
+	- L'enregistrement en base via votre micro API (Requèt POST).
+	- Un email envoyé en texte brut à `info@bulko.net` contenant un récaptulatif des données postées.
+	- La soumission du formulaire et ses retours d'erreurs doivent se faire en `Ajax`.
 
 ## Livrable
 
@@ -43,7 +43,5 @@
 * Transmettre par email l'url du repo ainsi que la version de PHP et le type de serveur utilisé. 
 
 ### ![](maquette/formulaire.jpg)
-
->	maquette/formulaire.psd
 
 © 2017 ![Bulko](asset/logoBulko.png).
