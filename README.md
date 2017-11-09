@@ -1,35 +1,50 @@
-# ![](asset/logoBulko.png) BkoJobs Développeur intégrateur web
+# ![](asset/logoBulko.png) BkoJobs Développeur web
 
-**Intégration desktop HTML/CSS du document Photoshop `maquette/formulaire.psd`.**
-* Si besoin, le document est prédécoupé dans le dossier `/asset`.
-* La gestion des points de rupture est **facultative**.
+> Il est **vivement** recommandé de lire l'intégralité du document avant de coder 🦄.
 
-**Vérifications sur le formulaire *(PHP + Ajax)*:**
+## 0°) Consigne globale.
+
+>	La "propreté" du code est un critère prioritaire.   
+>	L'utilisation de jQuery ou un autre Framework JS front est **autorisé**.   
+>	L'utilisation de framework PHP  n'est **pas autorisé**.   
+>	Votre code doit être compatible PHP 5.6 ou 7.   
+>	Votre code doit être testable sous Apache server ou Nginx.   
+>	Vos json doivent être [valides](https://jsonlint.com/).   
+
+## I°) Création d'une micro API HTTP.
+
+* Utiliser le `dump.sql` fourni afin d'initialiser la base de données.
+* Créer les methodes http suivantes:
+	- GET: `{votre_URL}/message/` -> Affiche les données de la table `message`.
+	- GET: `{votre_URL}/message/{id}`  -> Affiche les données de la table `message` pour l'{id}.
+	- POST: `{votre_URL}/message/` -> Ajoute une nouvelle ligne dans la table `message`.
+* Les methodes suivantes doivent renvoyer les données formatées en `Json` ou un message d'erreur lui aussi formaté en `Json`.
+
+## II°) Sécurisation de la micro API.
+
+**Vérifications de l'intégrité des données:**
 * Adresse e-mail correcte *(obligatoire)*.
 * Téléphone à 10 chiffres commençant par «0» *(obligatoire)*.
 * Les champs `nom` et `message` sont facultatifs.
-* Une protection anti injection SQL doit être présente sur l'ensemble des champs.
+* Une protection (basique) anti injection SQL doit être présente.
 
-**Traitement du formulaire**
-* Affichage d'un récapitulatif des données envoyées.
-* enregistrement en base de données des diférents champs saisis par l'utilisateur.
-* Retour d'erreur en Ajax.
-* Le mail est envoyé en text brut à `info@bulko.net`.
+## III°) Création d'un formulaire d'envoi de message.
 
-**Livrable**
-* URL d'un repo git public *(choix de la plateforme libre, fork du repo recommandé)*.
+* En utilisant la structure html fournie voir `index.php`.
+* La soumission du form déclanche : 
+	- L'enregistrement en base via votre micro API (Requette POST).
+	- Un email envoyé en text brut à `info@bulko.net` contenant un récaptulatif des donées posté.
+	- La soumission du formulaire et ses retour d'erreurs doivent se faire en `Ajax`.
+
+## Livrable
+
+* URL d'un repo git public *(choix de la plateforme libre, fork du repo possible)*.
 * Veillez à organiser vos commits *(message et fréquence)*.
 * Le repo doit contenir les assets utilisés, le code source du form *(back & front end)* et un dump sql de votre structure de données.
-* Transmettre par email l'url du repo. 
+* Transmettre par email l'url du repo ainsi que la version de PHP et le type de serveur utilisé. 
 
-----
+### ![](maquette/formulaire.jpg)
 
->	L'utilisation d'un préprocesseur CSS est **autorisée**.   
->	L'utilisation de jQuery et/ou Angular est **autorisée**.   
->	L'utilisation de framework CSS n'est **pas autorisée**.   
->	L'utilisation de framework PHP  n'est **pas autorisée**.   
-
-# ![](maquette/formulaire.jpg)
 >	maquette/formulaire.psd
 
-© 2017 ![Bulko](asset/logoBulko.png) 
+© 2017 ![Bulko](asset/logoBulko.png).
