@@ -1,0 +1,205 @@
+::-webkit-selection {
+	background: $storm;
+	color: white;
+}
+::-moz-selection {
+	background: $storm;
+	color: white;
+}
+::-ms-selection {
+	background: $storm;
+	color: white;
+}
+::-o-selection {
+	background: $storm;
+	color: white;
+}
+::selection {
+	background: $storm;
+	color: white;
+}
+
+html {
+	font-size: $remInit;
+}
+
+body{
+	overflow: hidden;
+	font-family: $mainFont;
+	background-color: white;
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+	background-position: 50% 0%;
+	background-size: cover;
+	* {
+		box-sizing: border-box;
+	}
+}
+
+header {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 1.7rem 0;
+	background-color: white;
+	box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.16);
+	margin-bottom: 15vh;
+	z-index: 3;
+	.wrapper {
+		width: 96rem;
+		margin: auto;
+	}
+	img { 
+		display: inline-block;
+		position: relative;
+		height: 2.7rem;
+		margin-right: 1rem;
+		vertical-align: middle;
+	}
+	.logo-github {
+		float: right;
+	}
+}
+
+a, a:visited {
+	color: $storm;
+	&:hover, &:focus {
+		color: $jade;
+	}
+}
+
+main {
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+form {
+	display: block;
+	position: relative;
+	width: 80rem;
+	box-sizing: border-box;
+	margin: auto;
+	padding: 5rem;
+	background-color: white;
+	box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.16);
+	p {
+		margin-bottom: 4rem;
+		font-size: 2.5rem;
+		font-weight: 600;
+	}
+}
+.form-part-1, .form-part-2 {
+	display: inline-block;
+	position: relative;
+	width: 47%;
+	vertical-align: top;
+}
+.form-part-2 {
+	margin-left: 5.6%;
+}
+input, textarea {
+	padding: 1rem 1.2rem;
+	background-color: $storm;
+	font-family: $mainFont;
+	font-size: 1.2rem;
+	text-shadow: none;
+	box-shadow: none;
+	border: none;
+	border-bottom: 0.3rem solid white;
+	border-radius: 0;
+	color: white;
+	&:hover, &:focus {
+		border-bottom: 0.3rem solid $jade;
+	}
+}
+input {
+	height: 4rem;
+	width: 100%;
+	margin-bottom: 1.8rem;
+}
+textarea {
+	width: 100%;
+	max-width: 100%;
+	height: 15.5rem;
+}
+input[type="submit"] {
+	width: auto;
+	padding: 0.7rem 3rem;
+	margin-top: 1.8rem;
+	margin-bottom: 0;
+	background: none;
+	text-shadow: none;
+	box-shadow: none;
+	background-color: $jade;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-align: left;
+	border-radius: 0;
+	border: none;
+	z-index: 1;
+	overflow: hidden;
+	cursor: pointer;
+	&:hover, &:focus {
+		box-shadow: none;
+		background-color: $lightJade;
+	}
+}
+::-webkit-input-placeholder {
+	color: white;
+	opacity: 1;
+}
+::-moz-placeholder {
+	color: white;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	color: white;
+	opacity: 1;
+}
+:-moz-placeholder {
+	color: white;
+	opacity: 1;
+}
+.form-info {
+	position: relative;
+	width: 80rem;
+	margin: auto;
+	padding: 2rem 3rem;
+	margin-bottom: 2rem;
+	background-color: white;
+	line-height: 1.8rem;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: $jade;
+	display: none;
+}
+.form-ok {
+	@extend .form-info;
+	display: block;
+	color: $storm;
+}
+.form-error {
+	@extend .form-info;
+	display: block;
+	color: $alert;
+}
+
+footer {
+	display: block;
+	z-index: 1;
+	p { 
+		position: absolute;
+		bottom: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		line-height: 1.7rem;
+		text-align: center;
+		font-size: 1.5rem;
+		color: white;
+		text-shadow: 0.2rem 0rem 0.2rem rgba(0, 0, 0, 1);
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "test-dev-bulko",
+  "version": "1.0.0",
+  "description": "**Intégration desktop HTML/CSS du document Photoshop `maquette/formulaire.psd`.**\r * Si besoin, le document est prédécoupé dans le dossier `/asset`.\r * La gestion des points de rupture est **facultative**.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-oyana": "^0.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bulko/test-dev-bulko.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bulko/test-dev-bulko/issues"
+  },
+  "homepage": "https://github.com/Bulko/test-dev-bulko#readme"
+}
